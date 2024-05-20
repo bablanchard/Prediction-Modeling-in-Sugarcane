@@ -120,7 +120,7 @@ unique_cross_values$gid <- seq_along(unique_cross_values$Cross)
 # Merge the unique values and their IDs with the original data frame
 TRSgid <- merge(TRS, unique_cross_values, by = "Cross")
 # The "gid" data frame will have a new column "gid" with numeric IDs for each value in TRS$Cross
-print(Diagid)
+print(TRSgid)
 unique_values <- unique(TRSgid$Cross)
 print(unique_values)
 
